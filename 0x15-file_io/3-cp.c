@@ -67,7 +67,7 @@ dprintf(STDERR_FILENO,
 "Error: Can't read from file %s\n", argv[1]);
 free(buffer);
 exit(98);
-}		
+}
 w = write(to, buffer, r);
 if (to == -1 || w == -1)
 {
